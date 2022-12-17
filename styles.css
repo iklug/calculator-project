@@ -1,0 +1,74 @@
+* {
+  background-color: white;
+}
+.container {
+  background-color: darkgray;
+  height: 580px;
+  width: 300px;
+  margin: 75px auto;
+  display: block;
+  border: 2px solid rgb(52, 52, 52);
+  border-radius: 5px;
+  filter: drop-shadow(2px 5px 4px #282828);
+}
+.display {
+  background-color: white;
+  width: 280px;
+  height: 125px;
+  margin: 10px auto;
+  border-radius: 5px;
+  display: block;
+  box-sizing: border-box;
+}
+.upper {
+  height: 30px;
+  width: 240px;
+  margin-top: 10px;
+  margin-left: 20px;
+  padding-top: 10px;
+  text-align: right;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.lower {
+  height: 80px;
+  width: 245px;
+
+  margin-left: 20px;
+  margin-top: 3px;
+  text-align: right;
+  font-size: 3.5em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.keys {
+  padding: 5px;
+  margin: 0 auto;
+  background-color: lightgray;
+  height: 410px;
+  width: 270px;
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-radius: 5px;
+}
+.key {
+  height: 75px;
+  width: 60px;
+  border: 3px solid darkgray;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  background-color: rgb(188, 246, 226);
+}
+.key.number {
+  background-color: hsl(276, 56%, 91%);
+}
+
+.key:hover {
+  filter: brightness(80%);
+}
