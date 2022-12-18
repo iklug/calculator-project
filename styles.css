@@ -12,15 +12,17 @@
   filter: drop-shadow(2px 5px 4px #282828);
 }
 .display {
-  background-color: white;
+  background-color: rgb(250, 250, 236);
   width: 280px;
   height: 125px;
   margin: 10px auto;
   border-radius: 5px;
   display: block;
   box-sizing: border-box;
+  filter: drop-shadow(1px 1px 1px #282828);
 }
 .upper {
+  background-color: inherit;
   height: 30px;
   width: 240px;
   margin-top: 10px;
@@ -31,6 +33,7 @@
     "Lucida Sans", Arial, sans-serif;
 }
 .lower {
+  background-color: inherit;
   height: 80px;
   width: 245px;
 
@@ -40,6 +43,12 @@
   font-size: 3.5em;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+}
+.lower.smallText {
+  font-size: 2em;
+  padding: 0;
+  margin-top: 30px;
+  height: 30px;
 }
 
 .keys {
@@ -53,22 +62,29 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   border-radius: 5px;
+  filter: drop-shadow(1px 1px 1px #282828);
 }
 .key {
   height: 75px;
   width: 60px;
-  border: 3px solid darkgray;
+  border: 3px solid rgb(171, 171, 171);
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: large;
   background-color: rgb(188, 246, 226);
+  filter: drop-shadow(1px 1px 1px #282828);
 }
+
 .key.number {
   background-color: hsl(276, 56%, 91%);
+  font-weight: bold;
+}
+.key.operator {
+  font-size: 1.3em;
 }
 
 .key:hover {
-  filter: brightness(80%);
+  filter: brightness(80%) drop-shadow(1px 1px 1px #282828);
 }
